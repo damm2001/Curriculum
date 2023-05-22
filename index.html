@@ -56,35 +56,29 @@
             <h2>Contactame</h2>
    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3408.1731839099743!2d-79.8516868218696!3d-2.0754138595493834!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1684783576961!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
-        <form id="formulario">
-         <label for="nombrescompletos">Nombres completos:</label> <input type="text" id="nombrescompletos" name="nombrescompletos" required="required" />
-         <label for="correoelectronico">Correo electrónico:</label> <input type="email" id="correoelectronico" name="correoelectronico" required="required" />
-        
-            <label>Género:</label>
-            <input type="radio" id="femenino" name="genero" value="femenino">
-            <label for="femenino">Femenino</label>
-            <input type="radio" id="masculino" name="genero" value="masculino">
-            <label for="masculino">Masculino</label>
-            <input type="radio" id="noresponder" name="genero" value="noresponder" checked="checked">
-            <label for="noresponder">Prefiero no responder</label>`
+       <form method="get">
+          <label>Name:
+            <input name="submitted-name" autocomplete="name" />
+          </label>
+          <button>Save</button>
+        </form>
 
-         <label for="fechanacimiento">Fecha de nacimiento:</label> <input type="date" id="fechanacimiento" name="fechanacimiento" required="required" />
+        <!-- Form which will send a POST request to the current URL -->
+        <form method="post">
+          <label>Name:
+            <input name="submitted-name" autocomplete="name" />
+          </label>
+          <button>Save</button>
+        </form>
 
-        
-            <label for="sistemaoperativo">Sistema Operativo:</label>
-            <select id="sistemaoperativo" name="sistemaoperativo">
-                <option value="windows">Windows</option>
-                <option value="linux">Linux</option>
-                <option value="macos">MacOS</option>
-            </select>
-
-         <label for="puntuacion">Puntuación:</label> <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" />
-
-         <label for="mensaje">Mensaje:</label> <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea>
-
-        <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> <label for="nosoyunrobot">No soy un robot</label>
-
-         <button type="submit" name="enviar">Enviar</button> <button type="reset" name="reiniciar">Cancelar</button>
+        <!-- Form with fieldset, legend, and label -->
+        <form method="post">
+          <fieldset>
+            <legend>Do you agree to the terms?</legend>
+            <label><input type="radio" name="radio" value="yes" /> Yes</label>
+            <label><input type="radio" name="radio" value="no" /> No</label>
+          </fieldset>
+        </form>
 
         </div>
         
