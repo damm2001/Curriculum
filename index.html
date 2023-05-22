@@ -56,10 +56,10 @@
             <h2>Contactame</h2>
    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3408.1731839099743!2d-79.8516868218696!3d-2.0754138595493834!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1684783576961!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
-        let form1 = `<form id="formulario">`
-        let typetext = `<label for="nombrescompletos">Nombres completos:</label> <input type="text" id="nombrescompletos" name="nombrescompletos" required="required" />`
-        let typeemail = `<label for="correoelectronico">Correo electrónico:</label> <input type="email" id="correoelectronico" name="correoelectronico" required="required" />`
-        let typegenre = `
+        let form1 = <form id="formulario">
+        let typetext = <label for="nombrescompletos">Nombres completos:</label> <input type="text" id="nombrescompletos" name="nombrescompletos" required="required" />
+        let typeemail = <label for="correoelectronico">Correo electrónico:</label> <input type="email" id="correoelectronico" name="correoelectronico" required="required" />
+        let typegenre = 
             <label>Género:</label>
             <input type="radio" id="femenino" name="genero" value="femenino">
             <label for="femenino">Femenino</label>
@@ -68,23 +68,23 @@
             <input type="radio" id="noresponder" name="genero" value="noresponder" checked="checked">
             <label for="noresponder">Prefiero no responder</label>`
 
-        let typedate = `<label for="fechanacimiento">Fecha de nacimiento:</label> <input type="date" id="fechanacimiento" name="fechanacimiento" required="required" />`
+        let typedate = <label for="fechanacimiento">Fecha de nacimiento:</label> <input type="date" id="fechanacimiento" name="fechanacimiento" required="required" />
 
-        let select = `
+        let select = 
             <label for="sistemaoperativo">Sistema Operativo:</label>
             <select id="sistemaoperativo" name="sistemaoperativo">
                 <option value="windows">Windows</option>
                 <option value="linux">Linux</option>
                 <option value="macos">MacOS</option>
-            </select>`
+            </select>
 
-        let typenumber = `<label for="puntuacion">Puntuación:</label> <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" />`
+        let typenumber = <label for="puntuacion">Puntuación:</label> <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" />
 
-        let textarea = `<label for="mensaje">Mensaje:</label> <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea>`
+        let textarea = <label for="mensaje">Mensaje:</label> <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea>
 
-        let typecheckbox = `<input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> <label for="nosoyunrobot">No soy un robot</label>`
+        let typecheckbox = <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> <label for="nosoyunrobot">No soy un robot</label>
 
-        let buttons = `<button type="submit" name="enviar">Enviar</button> <button type="reset" name="reiniciar">Cancelar</button>`
+        let buttons = <button type="submit" name="enviar">Enviar</button> <button type="reset" name="reiniciar">Cancelar</button>
 
         </div>
         
